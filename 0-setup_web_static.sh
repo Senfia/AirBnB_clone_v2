@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # sets up a web servers for the deployment of web_static.
 sudo apt-get update
