@@ -27,8 +27,9 @@ def print_c(text):
     return "C %s" %text.replace("_", " ")
 
 
+@app.route('/python/', strict_slashes=False)
 @app.route('/python/<string:text>', strict_slashes=False)
-def print_python(text):
+def print_python(text="is cool"):
     """ Prints Python followed by a text passed """
     return "Python %s" %text.replace("_", " ")
 
