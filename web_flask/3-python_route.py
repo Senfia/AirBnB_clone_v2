@@ -24,14 +24,14 @@ def hbnb():
 @app.route('/c/<string:text>', strict_slashes=False)
 def print_c(text):
     """ Prints C followed by a text passed """
-    return "C %s" %text.replace("_", " ")
+    return "C %s" % text.replace("_", " ")
 
 
 @app.route('/python/', strict_slashes=False)
 @app.route('/python/<string:text>', strict_slashes=False)
 def print_python(text="is cool"):
     """ Prints Python followed by a text passed """
-    return "Python %s" %text.replace("_", " ")
+    return "Python %s" % text.replace("_", " ")
 
 
 if __name__ == "__main__":
